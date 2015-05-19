@@ -1,0 +1,283 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*start*/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family:'Titillium Web', sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+hr {
+	width: 5%;
+	/*height: -2px;*/
+	margin-top: -10px;
+	border:1px solid;
+}
+
+h1 {
+	font-family: 'Titillium Web', sans-serif;
+	margin-top: 85px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 26px;
+    font-weight: 900px;
+}
+
+p {
+	/*margin-left: auto;
+    margin-right: auto;*/
+    margin-bottom: 50px;
+    text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 14px;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: -15px;
+}
+
+.container {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*============= Header Section =============*/
+
+.header {
+	height: 450px;
+	background: #845496;
+	color: #E3E4E8;
+	/*padding-top: 30px;
+	padding-bottom: 100px;*/
+}
+
+.header .nav {
+	padding-top: 30px;
+	/*width: 800px;*/
+}
+
+.header .nav img {
+	display: inline;
+	width: 80px;
+	float: left;
+	margin-left: 150px;
+}
+
+.header ul.nav {
+	display: inline;
+	margin-right: 150px;
+}
+
+.header ul.nav li {
+	list-style-type: none;
+	display: inline;
+	width: 60px;
+	float: right;	
+	line-height: 20px;	
+}
+
+.header .nav a {
+	color: #E3E4E8;
+	text-decoration: none;
+	font-size: 10px;
+	text-align: center;
+	/*padding: 5px 8px;*/
+}
+
+.header .nav a:link {
+	color: #E3E4E8;
+	text-decoration: none;
+	font-size: 10px;
+	text-align: center;
+}
+
+.header .nav a:hover {
+	color: #E3E4E8;
+	background: #674673;
+	text-decoration: none;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px 10px;
+}
+
+.header .who {
+	margin-top: 85px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    /*font-size: 18px;*/
+}
+
+.header .who h2 {
+	font-size: 28px;	
+	padding-bottom: 40px;
+}
+
+.header .who a {
+	background:#E37140;
+	padding:15px 55px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #E3E4E8;	
+	font-weight: 500px;
+	font-size: 14px;
+	box-shadow: 0px 2px 1px #C25D32;
+}
+
+.header .who a:hover {
+	background: #A15433;
+}
+
+/*============= Skills Section =============*/
+
+.skills {
+	height: 350px;
+	font-family: 'Titillium Web', sans-serif;
+	color: #404247;
+}
+
+hr {
+	color:#DCDCDE;
+}
+
+.skills p {
+	width: 45%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.skills .percent li {
+	float: left;
+	list-style-type: none;
+	width: auto;	
+	height: auto;
+	font-size: 13px;
+	padding: 0 40px;
+}
+
+.skills .percent img {
+	/*display: inline;*/
+	width: 125px;
+	height: 125px;
+}
+
+/*============= Contact Section =============*/
+
+#contact {
+	height: 650px;
+	background: #3E579E;
+	color: #E3E4E8;
+}
+
+#contact hr {
+	color: #424675;
+}
+
+#contact h1 {
+	padding-top: 75px;
+}
+
+#contact .address {
+	margin: 0 auto;
+}
+
+#contact .form {
+	height: 300px;
+	font-size: 13px;
+	letter-spacing: -1px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.formControl::-webkit-input-placeholder {
+  	color: #E3E4E8;
+  	/*padding-left: -20px;*/
+  	/*padding-top: 5px;*/
+}
+
+.formMessage::-webkit-input-placeholder {
+  	color: #E3E4E8;
+  	padding-left: 20px;
+  	padding-top:10px;
+}
+
+#contact .formControl {
+	width: 37%;
+	margin: 0 10px;
+	padding: 10px 15px;
+}
+
+#contact .nameRow {
+	margin: 0 auto;
+}
+
+#contact .formMessage, #contact .formControl {
+	background-color: #223773;
+	border-radius: 3px;
+	border:0;	
+	margin-top: 20px;
+}
+
+#contact .submit {
+	font-weight: 500;
+	font-size: 14px;
+	margin-top: 45px;
+	background-color: #4FBAE8;
+	color: #E3E4E8;
+	border-radius: 3px;
+	border: 0;
+	padding:15px 55px;
+	box-shadow: 0px 3px 1px #54A3C4;
+}
+
+#contact .submit:hover {
+	background-color: #338EB5;
+	outline: 0px;
+}
+
+/*============= Footer Section =============*/
+
+.footer {
+	height: 80px;
+	background: #344B8A;
+	color: #E3E4E8;
+	padding:5px 5px;
+}	
+
+.footer ul.social {
+	list-style-type: none;
+}
+
+.footer .social li {
+	float: left;
+	margin-left: 50px;
+	font-size: 17px;
+	padding: 0 5px;
+	font-weight: 500;
+}
+
+.footer .social a {
+	color: #E3E4E8;
+	text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
+}	
+
+.footer .social a:hover {
+	color: #539AC9;
+}
