@@ -1,0 +1,30 @@
+.skills {
+	color: $grey;
+	.container {
+				
+		hr {
+			color: #BFD2E0;
+		}
+		p {
+			width: 100%;
+			text-align: center;	
+		}
+	}
+}
+
+ul.skillSet {	
+	li {
+		list-style-type: none;	
+		font-size: 13px;
+		padding: 0 35px;
+		margin-bottom: 0;
+		@media (max-width: 720px) {
+			margin-bottom: 10px;
+		}
+	}	
+}
+
+.percent img {
+	width: 125px;
+	height: 125px;
+}

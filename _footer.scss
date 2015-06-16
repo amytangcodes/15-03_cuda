@@ -1,0 +1,57 @@
+.footer {
+	background: $footerBlue;
+	padding-bottom: 60px;
+	position: relative;
+	bottom: 0;
+	width: 100%;	
+	@media (max-width: 480px) {
+		padding-bottom: 5px;
+	}	
+	.container {
+		margin: 0 auto;
+		padding: 50px;
+		@media (max-width: 480px) {
+			padding: 15px;
+		}
+
+	}	
+}	
+
+ul.social {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	@media (max-width: 720px) {
+
+	}
+	@media (max-width: 480px) {
+		display:none;
+	}
+	li {
+		
+		a {
+			text-align: center;
+			padding: 5px 10px;
+			margin: 0 10px;
+			&:hover {
+				color: $socialBlue;
+			}
+		}
+	}
+}
+
+ul.socialIcons {
+	display: none;
+	width: 60%;
+	margin: 0 auto;
+	@media (max-width: 480px) {
+		display: block;
+		width: 100%;
+	}
+	a {
+		margin: 10px;
+		&:hover {
+			color: $socialBlue;
+		}
+	}	
+}

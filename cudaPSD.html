@@ -3,29 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cuda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="header">
+	<header class="header">
 		<div class="container">
 			<div class="nav clearfix">
 				<img src="images/logo.jpg" alt="Cuda">
-				<ul class="nav">
-					<li><a href="#contact">CONTACT</a></li>
-					<li><a href="#blog">BLOG</a></li>
-					<li><a href="#work">WORK</a></li>
-					<li><a href="#about">ABOUT</a></li>
+				<ul class="menu">
 					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#work">WORK</a></li>
+					<li><a href="#blog">BLOG</a></li>
+					<li><a href="#contact">CONTACT</a></li>	
 				</ul>
-			</div><!-- end of nav -->
-			<div class="who">
-				<h2>Hi there! We are the new kids on the block <br>and we build awesome websites and mobile apps.</h2>
-				<a href="#contact">WORK WITH US!</a>	
-			</div><!-- end of who -->
+			</div><!-- end of nav -->			
 		</div><!-- end of container -->	
-	</div><!-- end of header -->
+	</header>
+
+	<main class="main" id="home">
+		<div class="container">			
+			<h2>Hi there! We are the new kids on the block <br>and we build awesome websites and mobile apps.</h2>
+			<a href="#contact">WORK WITH US!</a>
+		</div><!-- End of container -->
+	</main>
 
 	<div class="skills" id="work">
 		<div class="container">
@@ -33,7 +37,7 @@
 			<hr>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<div class="percent clearfix">
-				<ul class="percent">
+				<ul class="skillSet">
 					<li class="p1">
 						<div class="p1">
 							<img src="images/90.jpg" height="166" width="167" alt=""><br>
@@ -65,43 +69,55 @@
 
 	<div class="contact" id="contact">
 		<div class="container">
-			<div class="row">
+			<div class="rowOne">
 				<h1>GET IN TOUCH</h1>
 				<hr>
-			</div><!-- end of row -->	
-			<div class="row">
+			</div><!-- end of rowOne -->	
+			
+			<div class="rowTwo">
+				
 				<div class="address">
 					<p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202)456-1111</p>
-					<form id="contact" class="form" action="">
-						<div class="nameRow">							
-							<input type="text" class="formControl" placeholder="Your Name*" required>
-							<input type="email" class="formControl" placeholder="Your Email*" required>
-						</div><!-- end of row -->
-						<textarea class="formMessage" name="message" id="message" placeholder="Your Message*" cols="100" rows="8"></textarea>
-						<div class="row">
-							<div class="button">
-								<button class="submit" type="submit">SEND MESSAGE</button>
-							</div><!-- end of button -->
-						</div><!-- end of row -->						
+
+					<form id="contact" class="form" action="">	
+						<div class="inputs">						
+							<input type="text" class="formControl name" placeholder="Your Name*" required>
+							<input type="email" class="formControl email" placeholder="Your Email*" required>
+						</div>	
+						<textarea class="formMessage" name="message" id="message" placeholder="Add your comment here*" cols="100" rows="8"></textarea>	
+						<button class="submit" type="submit">SEND MESSAGE</button>		
 					</form>
 				</div><!-- end of address -->	
-			</div><!-- end of row -->
+
+			</div><!-- end of rowTwo -->
 		</div><!-- end of container -->	
 	</div><!-- end of contact -->
 	
-	<div class="footer" id="footer">
+	<footer class="footer" id="footer">
 		<div class="container">
-			<ul class="social">
-				<li><a href="">Facebook</a></li>
-				<li><a href="">Twitter</a></li>
-				<li><a href="">Google+</a></li>
-				<li><a href="">LinkedIn</a></li>
-				<li><a href="">Behance</a></li>
-				<li><a href="">Dribble</a></li>
-				<li><a href="">GitHub</a></li>
-			</ul>
+			<div class="socMed">
+				<ul class="social clearfix">
+					<li><a href="">Facebook</a></li>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">Google+</a></li>
+					<li><a href="">LinkedIn</a></li>
+					<li><a href="">Behance</a></li>
+					<li><a href="">Dribble</a></li>
+					<li><a href="">GitHub</a></li>
+				</ul>
+			</div>	
+			<div class="socMedIcons">	
+				<ul class="socialIcons">
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+					<li><a href=""><i class="fa fa-behance"></i></a></li>
+					<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+					<li><a href=""><i class="fa fa-github"></i></a></li>
+				</ul>
+			</div>	
 		</div><!-- end of container -->			
-	</div><!-- end of footer -->
-	
+	</footer>	
 </body>
 </html>

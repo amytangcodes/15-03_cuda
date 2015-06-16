@@ -1,0 +1,94 @@
+.contact {	
+	background: $blue;
+	color: $white;
+	hr {
+		color: darken($blue, 20);
+	}
+}
+
+.rowTwo {
+	.address {
+		margin: 0 auto;
+		p {
+			width: 60%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 30px;
+			text-align: center;
+			@media (max-width: 890px) {
+				width: 75%;
+			}
+			@media (max-width: 720px) {
+				width: 90%;
+			}
+			@media (max-width: 480px) {
+				width: 95%;
+			}
+		}
+	}
+	form {
+		width: 60%;
+		font-size: 13px;
+		letter-spacing: -1px;		
+		margin: 0 auto;
+		@media (max-width: 890px) {
+			width: 75%;
+		}
+		@media (max-width: 720px) {
+			width: 90%;
+		}
+		@media (max-width: 480px) {
+			width: 95%;
+		}
+		input,
+		textarea {
+			padding: 10px 15px;
+			width: 100%;
+			color: $white;
+		}
+	}
+}
+
+.name {
+	margin-right: 3px;	
+}
+
+.email {
+	margin-left: 3px;
+}
+
+.inputs {
+	display: flex;	
+	@media (max-width: 720px) {
+		flex-direction: column;
+	}
+}
+
+.formControl::-webkit-input-placeholder, 
+.formMessage::-webkit-input-placeholder {
+  	color: $white;
+}
+
+.formMessage, 
+.formControl {
+	background-color: #223773;
+	border-radius: 3px;
+	border:0;	
+	margin-top: 20px;
+}
+
+.submit {
+	font-weight: 500;
+	font-size: 14px;
+	margin-top: 45px;
+	background-color: $lightBlue;
+	color: $white;
+	border-radius: 3px;
+	border: 0;
+	padding:15px 55px;
+	box-shadow: 0px 3px 1px darken($lightBlue, 20);
+	&:hover {
+		background: darken($lightBlue, 20);
+	}
+}
+

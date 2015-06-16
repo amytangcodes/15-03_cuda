@@ -1,0 +1,26 @@
+main {
+	width: 100%;
+	background: $mainPurple;	
+	.container {		
+		margin: 0 auto;
+		padding: 150px;
+		padding-left: 10%;
+		padding-right: 10%;
+		h2 {
+			margin-bottom: 40px;
+			font-size: 30px;
+			width: 100%;
+		}
+		a {
+			font-size: 12px;
+			background: $orange;
+			border-bottom: 3px solid darken($orange, 10);
+			border-radius: 4px;
+			padding: 10px 50px;
+			&:hover {
+				background: darken($orange, 10);
+			}
+		}
+	}
+}
+
